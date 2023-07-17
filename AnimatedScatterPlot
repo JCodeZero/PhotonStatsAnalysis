@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.widgets import Slider
 #-------------------------------------------------------------------------------------
-
-eventfile=fits.open('/home/jcode/Downloads/sw01088940000bevshsp_uf.evt.gz')
+filename = '/home/jcode/Downloads/sw01088940000bevshsp_uf.evt.gz'
+eventfile=fits.open(filename)
 events=eventfile[1].data
 shortdat=events[(events['TIME']>660920900) & (events['TIME']<660921200)]
 filterdat = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>0)]
@@ -55,7 +55,7 @@ plt.ylim([-10, Ymax])
 fig.subplots_adjust(bottom=0.25)
 
 #The horizontal slider for time
-axtime = fig.add_axes([0.25, 0.1, 0.65, 0.03])
+axtime = fig.add_axes([0.15, 0.1, 0.65, 0.03])
 time_slider = Slider(
     ax=axtime,
     label='Time [s]',
@@ -66,14 +66,16 @@ time_slider = Slider(
     
 # The function to be called anytime a slider's value changes
 def update(val):
-    newxy = np.empty((0,2), int) #np.array([])
-    newsize = np.empty((0,1), int) #np.array([])
+    newx = np.empty((0,1), int)
+    newy = np.empty((0,1), int)
+    newsize = np.empty((0,1), int)
     for i in range(len(time)):
         if int(time[i]) == time_slider.val:
-            newxy = np.append(newxy, np.array([[int(df.iloc[i][5]), int(df.iloc[i][6])]]), axis=0)
+            newx = np.append(newx, np.array([[int(df.iloc[i][5])]]), axis=0)
+            newy = np.append(newy, np.array([[int(df.iloc[i][6])]]), axis=0)
             newsize = np.append(newsize, np.array([[int(df.iloc[i][8])]]), axis=0)
-    scat.set_offsets(newxy)
-    scat.set_sizes(newsize)
+    ax.clear()
+    scat = ax.scatter(x=newx, y=newy, s=newsize, alpha=0.5)
     fig.canvas.draw_idle()
 
 
