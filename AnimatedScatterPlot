@@ -59,8 +59,8 @@ axtime = fig.add_axes([0.15, 0.1, 0.65, 0.03])
 time_slider = Slider(
     ax=axtime,
     label='Time [s]',
-    valmin=int(time[0]),
-    valmax=int(time[-1]),
+    valmin=time[0],
+    valmax=time[-1],
     valinit=660920900, valstep=1,
 )
     
