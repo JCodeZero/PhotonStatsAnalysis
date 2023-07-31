@@ -2,7 +2,7 @@ import sys
 from astropy.io import fits
 
 filename = sys.argv[1]
-eventfile=fits.open('filename')
+eventfile=fits.open(filename)
 events=eventfile[1].data
 
 import matplotlib.pyplot as plt
