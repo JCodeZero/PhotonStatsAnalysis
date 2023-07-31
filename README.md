@@ -28,7 +28,7 @@ GraphingShorterData.py will output a histogram of Time (in seconds) vs. the numb
 python3 GraphingShorterData.py
 ```
 \
-The data can first be visualized using ScatterPlot.py, which outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. \
+ScatterPlot.py outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. \
 Universal:
 ```bash
 python3 ScatterPlot.py [datafile]
