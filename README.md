@@ -21,7 +21,7 @@ https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshs
 Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the project folder.
 
 ## Usage
-The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. \
+The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. The Jupyter notebooks in the "notebook" folder are present to show the process how each .py file was written. \
 \
 GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset.
 ```bash
