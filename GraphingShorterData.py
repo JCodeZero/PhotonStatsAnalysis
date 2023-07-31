@@ -1,3 +1,4 @@
+import sys
 from astropy.io import fits
 
 filename = sys.argv[1]
