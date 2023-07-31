@@ -1,6 +1,6 @@
 from astropy.io import fits
 
-#filename = sys.argv[1]
+filename = sys.argv[1]
 eventfile=fits.open('filename')
 events=eventfile[1].data
 
