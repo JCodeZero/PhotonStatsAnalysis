@@ -20,7 +20,10 @@ To showcase and replicate the project, download the data file via the hyperlink 
 https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshsp_uf.evt.gz \
 Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the project folder.
 
-## Usage
+## Usage (Notebooks)
+Once navigated to the project folder, using `cd notebooks` will change the directory to the notebook folder. The notebooks contain various experiments done with the sample data presented in graphs. To view the notebooks, running `jupyter notebook` and then opening `localhost:8888/notebooks/` in your preferred browser will launch the notebook and from there, you can view the process of how the final algorithms were developed.
+
+## Usage (.py files)
 The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. The Jupyter notebooks in the "notebook" folder are present to show the process how each .py file was written. \
 \
 GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset.
