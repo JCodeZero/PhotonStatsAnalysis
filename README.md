@@ -18,7 +18,7 @@ pip install -r min-requirements.txt
 ```
 To showcase and replicate the project, download the data file via the hyperlink below that will be used as the example data set (~130 MB):
 https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshsp_uf.evt.gz \
-Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the project folder.
+Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the "notebook" folder of the project folder for the Jupyter notebooks to function correctly.
 
 ## Usage (Notebooks)
 Once navigated to the project folder, using `cd notebooks` will change the directory to the notebook folder. The notebooks contain various experiments done with the sample data presented in graphs. To view the notebooks, running `jupyter notebook` and then opening `localhost:8888/notebooks/` in your preferred browser will launch the notebook and from there, you can view the process of how the final algorithms were developed.
