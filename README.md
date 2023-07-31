@@ -17,13 +17,18 @@ Libraries can also be installed using `min-requirements.txt`, which will exclude
 pip install -r min-requirements.txt
 ```
 To showcase and replicate the project, download the data file via the hyperlink below that will be used as the example data set (~130 MB):
-https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshsp_uf.evt.gz /
+https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshsp_uf.evt.gz \
 Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the project folder.
 
 ## Usage
-GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset.
-/
-The data can first be visualized using ScatterPlot.py, which outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. /
+The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. \
+\
+GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset. \
+```bash
+python3 GraphingShorterData.py
+```
+\
+The data can first be visualized using ScatterPlot.py, which outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. \
 Universal:
 ```bash
 python3 ScatterPlot.py [datafile]
