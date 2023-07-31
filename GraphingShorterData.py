@@ -1,6 +1,7 @@
 from astropy.io import fits
 
-eventfile=fits.open('sw01088940000bevshsp_uf.evt.gz')
+#filename = sys.argv[1]
+eventfile=fits.open('filename')
 events=eventfile[1].data
 
 import matplotlib.pyplot as plt
