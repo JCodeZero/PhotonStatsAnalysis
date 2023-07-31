@@ -23,7 +23,7 @@ Example data is collected by the UK Swift Science Data Centre. Make sure the fil
 ## Usage
 The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. \
 \
-GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset. \
+GraphingShorterData.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. The interval of the histogram was assumed so it can not be appliable to any other dataset.
 ```bash
 python3 GraphingShorterData.py
 ```
