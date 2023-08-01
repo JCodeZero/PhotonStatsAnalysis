@@ -16,7 +16,7 @@ Libraries can also be installed using `min-requirements.txt`, which will exclude
 ```bash
 pip install -r min-requirements.txt
 ```
-To showcase and replicate the project, download the data file via the hyperlink below that will be used as the example data set (~130 MB):
+To showcase and replicate the project, download the data file via the hyperlink below that will be used as the example data set (~130 MB): \
 https://www.swift.ac.uk/archive/reproc/01088940000/bat/event/sw01088940000bevshsp_uf.evt.gz \
 Example data is collected by the UK Swift Science Data Centre. Make sure the file is in the "notebook" folder of the project folder for the Jupyter notebooks to function correctly.
 
@@ -38,7 +38,7 @@ python3 ScatterPlot.py [datafile]
 ```
 For the example file:
 ```bash
-python3 ScatterPlot.py sw01088940000bevshsp_uf.evt.gz
+python3 ScatterPlot.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```
 
 ## License
