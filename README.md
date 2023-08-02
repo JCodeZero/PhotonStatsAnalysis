@@ -23,18 +23,25 @@ Example data is collected by the UK Swift Science Data Centre. Make sure the fil
 ## Usage (Notebooks)
 Once navigated to the project folder, using `cd notebooks` will change the directory to the notebook folder. The notebooks contain various experiments done with the sample data presented in graphs. To view the notebooks, running `jupyter notebook` and then opening `localhost:8888/notebooks/` in your preferred browser will launch the notebook and from there, you can view the process of how the final algorithms were developed.
 
-## Usage (.py files)
+## Usage (Graphs)
 The project contains multiple Python files capable of providing different visualizations of the data set: scatter plots, histograms, etc. The Jupyter notebooks in the "notebook" folder are present to show the process how each .py file was written. \
 \
-GraphBurst.py will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. This will be the filtered data set that will be used as the example data for furthur experimentation.
+`GraphBurst.py` will output a histogram of Time (in seconds) vs. the number of photons in each second, displaying the gamma-ray burst visible in the data. This will be the filtered data set that will be used as the example data for furthur experimentation.
 ```bash
 python3 GraphBurst.py sw01088940000bevshsp_uf.evt.gz
 ```
 \
-ScatterPlot.py outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. \
+`ScatterPlot.py` outputs a scatter plot with a slider for Time (in seconds), axis for the x and y position, and the energy of each photon as the size of the corresponding dot. \
 ```bash
 python3 ScatterPlot.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```
+\
+`2DHistogram.py` outputs a colored histogram where each bin is located on a x and y axis, and the brighter a bin is, the more photons can be found in that bin.
+```bash
+python3 2DHistogram.py sw01088940000bevshsp_uf.evt.gz
+```
+## Usage (Detection Methods)
+In the notebook `DetectingBursts.ipnb` 
 
 ## License
 This is licensed under GNU General Public License v3.0.
