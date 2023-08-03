@@ -49,3 +49,4 @@ slopemethod = filterdat[(filterdat['TIME']>temparray[0]) & (filterdat['TIME']<te
 _=plt.hist(slopemethod['TIME'], bins=300)
 plt.xlabel('Time (s)')
 plt.ylabel('# of photons')
+plt.show()
