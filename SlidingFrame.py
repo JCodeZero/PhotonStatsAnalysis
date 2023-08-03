@@ -88,3 +88,4 @@ slidemethod = filterdat[(filterdat['TIME']>timearray[freqstart]) & (filterdat['T
 _=plt.hist(slidemethod['TIME'], bins=300)
 plt.xlabel('Time (s)')
 plt.ylabel('# of photons')
+plt.show()
