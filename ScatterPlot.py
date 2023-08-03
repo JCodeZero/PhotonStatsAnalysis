@@ -1,14 +1,16 @@
+import sys
 from astropy.io import fits
-import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 from matplotlib.widgets import Slider
-#-------------------------------------------------------------------------------------
-filename = 'sw01088940000bevshsp_uf.evt.gz'
+
+filename = sys.argv[1]
 eventfile=fits.open(filename)
 events=eventfile[1].data
 shortdat=events[(events['TIME']>660920900) & (events['TIME']<660921200)]
-filterdat = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>0)]
+cleanevts = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>15)]
+filterdat = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>15)]
 
 #-------------------------------------------------------------------------------------
 array = np.empty((0,3), int)
