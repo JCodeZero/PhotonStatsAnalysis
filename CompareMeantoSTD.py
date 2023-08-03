@@ -65,3 +65,4 @@ comparemethod = filterdat[(filterdat['TIME']>start[0]) & (filterdat['TIME']<end[
 _=plt.hist(comparemethod['TIME'], bins=300)
 plt.xlabel('Time (s)')
 plt.ylabel('# of photons')
+plt.show()
