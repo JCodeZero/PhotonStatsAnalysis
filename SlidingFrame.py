@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 filename = sys.argv[1]
-eventfile=fits.open('filename')
+eventfile=fits.open(filename)
 events=eventfile[1].data
 shortdat=events[(events['TIME']>660920900) & (events['TIME']<660921200)]
 cleanevts = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>15)]
