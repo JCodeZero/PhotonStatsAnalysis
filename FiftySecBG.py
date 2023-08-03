@@ -60,3 +60,4 @@ assumemethod = filterdat[(filterdat['TIME']>assumestart) & (filterdat['TIME']<as
 _=plt.hist(assumemethod['TIME'], bins=300)
 plt.xlabel('Time (s)')
 plt.ylabel('# of photons')
+plt.show()
