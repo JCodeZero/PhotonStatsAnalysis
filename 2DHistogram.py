@@ -3,6 +3,7 @@ from astropy.io import fits
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from matplotlib.widgets import Slider
 
 filename = sys.argv[1]
 eventfile=fits.open(filename)
