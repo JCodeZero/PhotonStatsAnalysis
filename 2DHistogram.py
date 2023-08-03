@@ -12,6 +12,7 @@ shortdat=events[(events['TIME']>660920900) & (events['TIME']<660921200)]
 cleanevts = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>15)]
 filterdat = shortdat[(shortdat['EVENT_FLAGS']==0) & (shortdat['ENERGY']>15)]
 
+array = np.empty((0,2), int)
 time = []
 
 df = pd.DataFrame(filterdat, columns = ['TIME','DET_ID','EVENT_FLAGS','PHA','MASK_WEIGHT','DETX','DETY','PI','ENERGY'])
