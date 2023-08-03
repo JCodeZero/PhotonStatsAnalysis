@@ -32,3 +32,4 @@ for i in timearray:
 
 bins,ns=np.histogram(shortdat['TIME'],bins=300)
 plt.plot(ns[:-1],bins)
+plt.show()
