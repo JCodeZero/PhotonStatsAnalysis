@@ -67,5 +67,27 @@ python3 FiftySecBG.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```bash
 python3 SlidingFrame.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```
+## Usage (Paper and Presentation)
+To download the presentation as pdf:
+```bash
+libreoffice --headless --convert-to pdf JaidenLin_GammaRayBursts_Slides.odp
+```
+\
+To open the research paper as a pdf type
+```bash
+pdflatex JaidenLin_GammaRayBursts_Paper.tex
+```
+Followed by
+```bash
+biber JaidenLin_GammaRayBursts_Paper
+```
+Now, recompile the file again
+```bash
+pdflatex JaidenLin_GammaRayBursts_Paper.tex
+```
+Open the created pdf by typing
+```bash
+open JaidenLin_GammaRayBursts_Paper.pdf
+```
 ## License
 This is licensed under GNU General Public License v3.0.
