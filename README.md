@@ -75,19 +75,19 @@ libreoffice --headless --convert-to pdf JaidenLin_GammaRayBursts_Slides.odp
 \
 To open the research paper as a pdf type
 ```bash
-pdflatex JaidenLin_GammaRayBursts_Paper.tex
+pdflatex JaidenLin_GammaRayBursts_Paper/main.tex
 ```
 Followed by
 ```bash
-biber JaidenLin_GammaRayBursts_Paper
+biber main
 ```
 Now, recompile the file again
 ```bash
-pdflatex JaidenLin_GammaRayBursts_Paper.tex
+pdflatex main.tex
 ```
 Open the created pdf by typing
 ```bash
-open JaidenLin_GammaRayBursts_Paper.pdf
+open main.pdf
 ```
 ## License
 This is licensed under GNU General Public License v3.0.
