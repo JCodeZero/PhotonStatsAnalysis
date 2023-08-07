@@ -67,7 +67,8 @@ python3 FiftySecBG.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```bash
 python3 SlidingFrame.py notebooks/sw01088940000bevshsp_uf.evt.gz
 ```
-## Usage (Paper and Presentation)
+## Usage (Presentation and Paper)
+Download necessary dependencies for the following. \
 To download the presentation form odp to pdf:
 ```bash
 libreoffice --headless --convert-to pdf JaidenLin_GammaRayBursts_Slides.odp
